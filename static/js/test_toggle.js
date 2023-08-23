@@ -11,13 +11,13 @@ const SslyzeIntegration = {
                 config,
                 is_default,
                 selected_integration: id,
-                save_intermediates_to,
+                // save_intermediates_to,
             } = this
             return {
                 config,
                 is_default,
                 id,
-                save_intermediates_to,
+                // save_intermediates_to,
             }
         },
     },
@@ -62,8 +62,7 @@ const SslyzeIntegration = {
             config: {},
             error: {},
 
-            nikto_parameters: "",
-            save_intermediates_to: '/data/intermediates/dast',
+            // save_intermediates_to: '/data/intermediates/dast',
         })
     },
     template: `
@@ -78,7 +77,7 @@ const SslyzeIntegration = {
             </div>
 
             <div class="form-group">
-                <h9>Save intermediates to</h9>
+                <!--<h9>Save intermediates to</h9>
                 <p>
                     <h13>Optional</h13>
                 </p>
@@ -86,7 +85,7 @@ const SslyzeIntegration = {
                     placeholder=""
                     v-model="save_intermediates_to"
                     :class="{ 'is-invalid': error.save_intermediates_to }">
-                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
             </div>
         </div>
     `
@@ -94,4 +93,3 @@ const SslyzeIntegration = {
 
 
 register_component('scanner-sslyze', SslyzeIntegration)
-

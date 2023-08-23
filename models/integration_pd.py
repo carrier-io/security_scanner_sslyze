@@ -4,7 +4,7 @@ from pylon.core.tools import log
 
 
 class IntegrationModel(BaseModel):
-    save_intermediates_to: Optional[str] = '/data/intermediates/dast'
+    # save_intermediates_to: Optional[str] = '/data/intermediates/dast'
 
     def check_connection(self) -> bool:
         try:
